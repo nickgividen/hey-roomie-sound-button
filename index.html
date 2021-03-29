@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pic">
+        <img src="roomies.png">
+    </div>
+    <div class="container">
+        <button onclick="playAudio()" class="btn">click here</button>
+    </div>
+
+    <audio id="sound" src="sounds/heyroomie.m4a"></audio>
+
+<script>
+    let sound = document.getElementById('sound');
+    function playAudio() {
+        sound.play();
+    }
+
+</script>
+</body>
+</html>
